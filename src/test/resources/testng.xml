@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="RegressionTest" verbose="3">
+    <listeners>
+        <listener class-name="com.restassured.Listeners.TestListeners"/>
+    </listeners>
+    <test verbose="1" name="loginPage" parallel="false">
+
+        <classes>
+            <!-- <class name="com.restassured.tests.TestGet"/>
+            <class name="com.restassured.tests.TestPost"/>
+            -->
+            <parameter name="id" value="551"></parameter>
+            <parameter name="firstName" value="Altaf"></parameter>
+            <parameter name="lastName" value="Hussain"></parameter>
+            <parameter name="age" value="21"></parameter>
+            <parameter name="address" value="new javed shaheed road"></parameter>
+            <class name="com.restassured.tests.TestPut"></class>
+        </classes>
+    </test>
+</suite>
